@@ -4,7 +4,7 @@ import pickle
 
 # Load the Random Forest model
 try:
-    with open('random_forest_model.pkl', 'rb') as model_file:
+    with open('random_forestt_model.pkl', 'rb') as model_file:
         model = pickle.load(model_file)
 except FileNotFoundError:
     st.error("❌ Model file 'random_forest_model.pkl' not found. Please ensure the file is in the correct directory.")
@@ -50,5 +50,5 @@ This app predicts the likelihood of rain based on:
 1. **Total Precipitation (PRECTOT)**: The amount of precipitation in mm.
 2. **Wind Speed at 50m (ws50m_range)**: The average wind speed at a height of 50m.
 
-The prediction is powered by a pre-trained Random Forest model.
+The prediction is powered by a pre-trained Random Forestt model.
 """)
